@@ -2,7 +2,7 @@ const express = require('express')
 
 const router = express.Router()
 const { createUser, userLogin } = require('../controllers/userController')
-const { authentication, authorization } = require('../middlewares/auth')
+const { authentication, authorization } = require('../middleWares/auth')
 const { createTask, getTasks, getCompletedTasks, getTaskBySortCom, getTaskBySort, getTaskById,updateStatus, updateTask, deleteTask } = require('../controllers/taskController')
 
 
